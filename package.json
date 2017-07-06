@@ -1,0 +1,32 @@
+{
+  "name": "functional-javascript-examples",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "ts-node": "ts-node",
+    "tsc": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/battmanz/functional-javascript-examples.git"
+  },
+  "keywords": [],
+  "author": {
+    "name": "Matthew Banz",
+    "email": "matt.banz@gmail.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/battmanz/functional-javascript-examples/issues"
+  },
+  "homepage": "https://github.com/battmanz/functional-javascript-examples#readme",
+  "dependencies": {
+    "immutable": "^4.0.0-rc.2",
+    "ramda": "^0.24.1"
+  },
+  "devDependencies": {
+    "@types/ramda": "^0.24.1",
+    "ts-node": "^3.1.0",
+    "typescript": "^2.4.1"
+  }
+}
