@@ -1,4 +1,4 @@
-import { Record } from 'immutable';
+const Immutable = require('immutable');
 
 /*
  * Use `Record` in place of:
@@ -9,7 +9,7 @@ import { Record } from 'immutable';
  *   }
  * }
  */
-const Product = Record({ name: 'default', brand: 'default', year: 0 });
+const Product = Immutable.Record({ name: 'default', brand: 'default', year: 0 });
 
 const p1 = new Product({ name: 'Xylophone', brand: 'Fisher Price', year: 2010 });
 const p2 = p1.set('name', 'Power Wheels');

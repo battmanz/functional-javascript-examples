@@ -5,3 +5,6 @@ function iterativeFactorial(n) {
   }
   return product;
 }
+
+
+console.log(iterativeFactorial(5));

@@ -1,7 +1,7 @@
-import { Map } from 'immutable';
+const Immutable = require('immutable');
 
 // Use in place of `new Map()`
-const map1 = Map<string, number>([
+const map1 = Immutable.Map([
   ['one', 1],
   ['two', 2],
   ['three', 3]

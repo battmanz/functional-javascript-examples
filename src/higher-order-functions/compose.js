@@ -1,4 +1,4 @@
-import * as R from 'ramda';
+const R = require('ramda');
 
 const vehicles = [
   { make: 'Honda', model: 'CR-V', type: 'suv', price: 24045 },
@@ -13,11 +13,11 @@ const vehicles = [
   { make: 'Ford', model: 'Explorer', type: 'suv', price: 31660 }
 ];
 
-// Using `pipe` executes the functions from top-to-bottom.
-const averageSUVPrice1 = R.pipe(
-  R.filter(v => v.type === 'suv'),
+// Using `compose` executes the functions from bottom-to-top.
+const averageSUVPrice2 = R.compose(
+  R.mean,
   R.map(v => v.price),
-  R.mean
+  R.filter(v => v.type === 'suv')
 )(vehicles);
 
-console.log(averageSUVPrice1); // 33399
+console.log(averageSUVPrice2); // 33399

@@ -1,4 +1,4 @@
-import * as R from 'ramda';
+const R = require('ramda');
 
 function dot(vector1, vector2) {
   return vector1.reduce((sum, element, index) => sum += element * vector2[index], 0);

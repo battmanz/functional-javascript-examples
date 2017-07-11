@@ -1,4 +1,4 @@
-import * as R from 'ramda';
+const R = require('ramda');
 
 function h(x) {
   return x + 1;
